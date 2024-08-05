@@ -1,6 +1,6 @@
 name: searching_algoritm
 description: A Dart package providing various search algorithms including Binary Search, Linear Search, and Jump Search.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/Aabdulloh2005/searching_algoritm.git
 
 environment:
