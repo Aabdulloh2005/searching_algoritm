@@ -8,17 +8,11 @@ class SearchAlgorithms {
     for (int i = 0; i < list.length; i++) {
       if (list[i] == element) {
         stopwatch.stop();
-        return {
-          'index': i,
-          'time': stopwatch.elapsedMicroseconds
-        };
+        return {'index': i, 'time': stopwatch.elapsedMicroseconds};
       }
     }
     stopwatch.stop();
-    return {
-      'index': -1,
-      'time': stopwatch.elapsedMicroseconds
-    };
+    return {'index': -1, 'time': stopwatch.elapsedMicroseconds};
   }
 
   // Binary Search
@@ -32,10 +26,7 @@ class SearchAlgorithms {
 
       if (list[middle] == element) {
         stopwatch.stop();
-        return {
-          'index': middle,
-          'time': stopwatch.elapsedMicroseconds
-        };
+        return {'index': middle, 'time': stopwatch.elapsedMicroseconds};
       }
 
       if (list[middle] < element) {
@@ -45,10 +36,7 @@ class SearchAlgorithms {
       }
     }
     stopwatch.stop();
-    return {
-      'index': -1,
-      'time': stopwatch.elapsedMicroseconds
-    };
+    return {'index': -1, 'time': stopwatch.elapsedMicroseconds};
   }
 
   // Jump Search
@@ -63,26 +51,17 @@ class SearchAlgorithms {
       step += sqrt(length).toInt();
       if (prev >= length) {
         stopwatch.stop();
-        return {
-          'index': -1,
-          'time': stopwatch.elapsedMicroseconds
-        };
+        return {'index': -1, 'time': stopwatch.elapsedMicroseconds};
       }
     }
 
     for (int i = prev; i < min(step, length); i++) {
       if (list[i] == element) {
         stopwatch.stop();
-        return {
-          'index': i,
-          'time': stopwatch.elapsedMicroseconds
-        };
+        return {'index': i, 'time': stopwatch.elapsedMicroseconds};
       }
     }
     stopwatch.stop();
-    return {
-      'index': -1,
-      'time': stopwatch.elapsedMicroseconds
-    };
+    return {'index': -1, 'time': stopwatch.elapsedMicroseconds};
   }
 }

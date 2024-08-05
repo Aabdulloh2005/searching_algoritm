@@ -4,7 +4,6 @@ import 'package:test/test.dart';
 void main() {
   group('SearchAlgorithms', () {
     final list = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
-    final stringList = ['apple', 'banana', 'cherry', 'date'];
 
     test('linearSearch finds the correct index', () {
       final result = SearchAlgorithms.linearSearch(list, 7);
